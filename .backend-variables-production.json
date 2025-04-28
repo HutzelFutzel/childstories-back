@@ -1,0 +1,7 @@
+{
+    "frontendUrl": "http://localhost:3000",
+    "backendUrl": "http://localhost:8080",
+    "gemini": {
+        "apiKey": "AIzaSyBHZXIfQzZ4Ygm3iaBe5uU9xK5nIvPXR4c"
+    }
+}

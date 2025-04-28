@@ -1,0 +1,33 @@
+{
+  "name": "childstories-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/server.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "build:jobs-1min": "tsc --project src/jobs/jobs1min/tsconfig.json",
+    "start": "node dist/server.js",
+    "prestart": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HutzelFutzel/childstories-back.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/HutzelFutzel/childstories-back/issues"
+  },
+  "homepage": "https://github.com/HutzelFutzel/childstories-back#readme",
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-async-handler": "^1.2.0"
+  }
+}
