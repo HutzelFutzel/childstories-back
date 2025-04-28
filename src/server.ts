@@ -83,9 +83,9 @@ async function main() {
         // Start the HTTP server
         httpServer.listen(PORT, () => {
             if (process.env.NODE_ENV === 'development') {
-                console.log(`Server started on http://localhost:${PORT}`);
+                console.log(`Childstories - Server started on http://localhost:${PORT}`);
             } else {
-                console.log(`Server started on ${ENV_VARIABLES.backendUrl}`);
+                console.log(`Childstories - Server started on ${ENV_VARIABLES.backendUrl}`);
             }
             console.log(`Environment: ${process.env.NODE_ENV}`);
         });
