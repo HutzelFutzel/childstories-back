@@ -25,7 +25,7 @@ const serviceAccount = ENV_GCP_ADMIN;
 // server routes to check server status
 // test it using curl <server>/server/ping
 const serverRouter = express.Router();
-serverRouter.get('/ping', (req, res) => {
+serverRouter.get('/ping', (req: Request, res: Response) => {
     res.send(`
     <h1>Answer from server v1.01</h1>
     <p>Time: ${new Date().toISOString()}</p>`);
@@ -35,7 +35,7 @@ serverRouter.get('/ping', (req, res) => {
 export const app = express();
 
 const corsOptions: cors.CorsOptions = {
-    origin: (origin, callback) => {
+    origin: (origin: string | undefined, callback: any) => {
 
         const allowedOrigins = process.env.NODE_ENV === 'development'
             ? [
