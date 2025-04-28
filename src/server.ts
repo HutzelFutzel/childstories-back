@@ -44,6 +44,8 @@ const corsOptions: cors.CorsOptions = {
 
             ] : process.env.NODE_ENV === 'production'
                     ? [
+                        'https://childstories-back-342380485215.us-east4.run.app',
+                        'https://childstories-back-by3mqtka3a-uk.a.run.app',
                         'https://childstories-web-342380485215.us-east4.run.app',
                         'https://childstories-web-by3mqtka3a-uk.a.run.app',
                     ]
